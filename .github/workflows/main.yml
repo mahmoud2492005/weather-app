@@ -14,4 +14,8 @@ jobs:
         run: docker login --username ${{secrets.USER_NAME }} --password ${{secrets.TOKEN_WEATHER }}
 
 
-     
+      - name: "Bulding docker image"
+        run: docker build -t ${{secrets.USER_NAME }}/Weather-App .
+
+      - name: "Pushing to Docker hub"
+        run: docker push ${{secrets.USER_NAME }}/Weather-App     
