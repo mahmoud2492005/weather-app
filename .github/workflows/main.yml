@@ -15,7 +15,7 @@ jobs:
 
 
       - name: "Bulding docker image"
-        run: docker build -t ${{secrets.USER_NAME }}/mahmoudahmed202340067 .
+        run: docker build -t ${{secrets.USER_NAME }}/weather .
 
       - name: "Pushing to Docker hub"
-        run: docker push ${{secrets.USER_NAME }}/mahmoudahmed202340067     
+        run: docker push ${{secrets.USER_NAME }}/weather     
