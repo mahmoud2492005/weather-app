@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="bg-dark text-white">
+<h1  class="  text-center text-primary">Weather Api</h1>
+
+      <div class="container py-5">
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <div class="input-group">
+          <input id="search" type="text" class="form-control" placeholder="Search City..." />
+          <button class="btn btn-primary">Search</button>
+        </div>
+        <div class="input-group mt-5">
+       <input  id="num"  type="number" class="form-control" placeholder="Number of days displayed..." />
+          <button  id="submit" class="btn btn-primary">click</button>
+        </div>
+      </div>
+    </div>
+      <h1 id="msgLocation" class="text-center d-none">Weather by location</h1>
+      <h1 id="msgDefultLocation" class="text-center d-none">You have not allowed this location. This is the default location.</h1>
+      <h1 id="msgSearch" class="text-center d-none">Search result for city weather</h1>
+    <div class="row g-4 m-4" id="row">
+
+    </div>
+  </div>
+    
+        
+
+              
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/first.js"></script>
+</body>
+</html>
